@@ -22,11 +22,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-20T13:43:10.4110339+01:00"
+    created: "2024-06-20T13:57:18.790557+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: bd660de20156d0c41f533699e7e72ab6a6886e276a2fe15bc0e9d82c7ae3a9fa
+    digest: 658df657dd1b319202551ec85200c7b149be1a3f6587c4a9a754d6c9e4887f79
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -54,31 +54,4 @@ entries:
     urls:
     - https://github.com/fersimedyoussef/helm-charts-public/jenkins-5.3.0.tgz
     version: 5.3.0
-  nexus-repository-manager:
-  - apiVersion: v2
-    appVersion: 3.64.0
-    created: "2024-06-20T13:43:10.4120277+01:00"
-    deprecated: true
-    description: DEPRECATED Sonatype Nexus Repository Manager - Universal Binary repository
-    digest: d65474c1665c880c10d6d3b5abc537171bdd6f54394669ab0fc8977f50e4964c
-    home: https://www.sonatype.com/nexus-repository-oss
-    icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
-    keywords:
-    - artifacts
-    - dependency
-    - management
-    - sonatype
-    - nexus
-    - repository
-    - quickstart
-    - ci
-    - repository-manager
-    - nexus3
-    name: nexus-repository-manager
-    sources:
-    - https://github.com/sonatype/nexus-public
-    type: application
-    urls:
-    - https://github.com/fersimedyoussef/helm-charts-public/nexus-repository-manager-64.2.0.tgz
-    version: 64.2.0
-generated: "2024-06-20T13:43:10.4026962+01:00"
+generated: "2024-06-20T13:57:18.7840845+01:00"
