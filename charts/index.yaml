@@ -22,11 +22,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-20T12:07:51.0472466+01:00"
+    created: "2024-06-20T12:19:10.1880259+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: f581fe1383322cd3f27da99a26f296707c7f120fca7beb0083b48234cb46e268
+    digest: 12d373f3b2c07854db81380d7e86e15bf64ced26da0e6860f7b1939b89158f0c
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -54,95 +54,4 @@ entries:
     urls:
     - https://github.com/fersimedyoussef/helm-charts-public/jenkins-5.3.0.tgz
     version: 5.3.0
-  keycloak:
-  - annotations:
-      category: DeveloperTools
-      images: |
-        - name: keycloak
-          image: docker.io/bitnami/keycloak:24.0.5-debian-12-r0
-        - name: keycloak-config-cli
-          image: docker.io/bitnami/keycloak-config-cli:5.12.0-debian-12-r5
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 24.0.5
-    created: "2024-06-20T12:07:51.068503+01:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Keycloak is a high performance Java-based identity and access management
-      solution. It lets developers add an authentication layer to their applications
-      with minimum effort.
-    digest: a6c5f2dca40bcb9a431bae666fbbaca568739980052b6c651399090c859540c5
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
-    keywords:
-    - keycloak
-    - access-management
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: keycloak
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
-    urls:
-    - https://github.com/fersimedyoussef/helm-charts-public/keycloak-21.4.3.tgz
-    version: 21.4.3
-  wordpress:
-  - annotations:
-      category: CMS
-      images: |
-        - name: apache-exporter
-          image: docker.io/bitnami/apache-exporter:1.0.7-debian-12-r9
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r22
-        - name: wordpress
-          image: docker.io/bitnami/wordpress:6.5.4-debian-12-r4
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 6.5.4
-    created: "2024-06-20T12:07:51.0959794+01:00"
-    dependencies:
-    - condition: memcached.enabled
-      name: memcached
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 7.x.x
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 18.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: WordPress is the world's most popular blogging and content management
-      platform. Powerful yet simple, everyone from students to global corporations
-      use it to build beautiful, functional websites.
-    digest: 74e72566286294d9fa9d31b7095a0b9ab73d6b65c0523d5688c4722eec1ce7fc
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
-    keywords:
-    - application
-    - blog
-    - cms
-    - http
-    - php
-    - web
-    - wordpress
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: wordpress
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
-    urls:
-    - https://github.com/fersimedyoussef/helm-charts-public/wordpress-22.4.12.tgz
-    version: 22.4.12
-generated: "2024-06-20T12:07:51.0346341+01:00"
+generated: "2024-06-20T12:19:10.1808678+01:00"
