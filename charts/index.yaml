@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-20T14:10:46.1108017+01:00"
+    created: "2024-06-20T14:18:17.713802+01:00"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: fca3814289642e6506d150bf6f27b245ae4fc66554eb989b5807cc0caeceaece
+    digest: 8e85fc1ce4479e33cfdcd47813e25e3a25286034c71771d7cf7e31e2fb73e631
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -36,7 +36,7 @@ entries:
     - https://github.com/grafana/helm-charts
     type: application
     urls:
-    - https://github.com/fersimedyoussef/helm-charts-public/grafana-8.0.2.tgz
+    - https://github.com/fersimedyoussef/helm-charts-public/charts/grafana-8.0.2.tgz
     version: 8.0.2
   jenkins:
   - annotations:
@@ -60,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-20T14:10:46.1144451+01:00"
+    created: "2024-06-20T14:18:17.7168023+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 9fe9a758ad46c9991f4584fc4b718ac213d316132e54e37dfda55bfbd17c2899
+    digest: c0407f3100203718f5bfccd18dfe54379f99336bc50e8bf908d1b9ca596dc7ec
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -90,6 +90,6 @@ entries:
     - https://github.com/jenkinsci/configuration-as-code-plugin
     type: application
     urls:
-    - https://github.com/fersimedyoussef/helm-charts-public/jenkins-5.3.0.tgz
+    - https://github.com/fersimedyoussef/helm-charts-public/charts/jenkins-5.3.0.tgz
     version: 5.3.0
-generated: "2024-06-20T14:10:46.1067967+01:00"
+generated: "2024-06-20T14:18:17.7108295+01:00"
