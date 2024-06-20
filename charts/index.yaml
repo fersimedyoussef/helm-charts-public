@@ -22,11 +22,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-20T14:02:37.0843357+01:00"
+    created: "2024-06-20T14:07:19.4014032+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 2b73662b2f369273dbd923b3fec05ddb7b2fbea7961e32a61037d4cbc940a481
+    digest: 1487a2e987981fc291c23ad1d4a6a506268d93f3aa0440905657744b088f9161
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -54,4 +54,4 @@ entries:
     urls:
     - https://github.com/fersimedyoussef/helm-charts-public/jenkins-5.3.0.tgz
     version: 5.3.0
-generated: "2024-06-20T14:02:37.0788027+01:00"
+generated: "2024-06-20T14:07:19.3983244+01:00"
