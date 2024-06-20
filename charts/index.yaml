@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-20T14:32:55.8244176+01:00"
+    created: "2024-06-20T14:33:37.1355487+01:00"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: 1c0eaebc2da62e76f33878388a2e7cb5840eac47a38ea10be3da820484815a8b
+    digest: 0f28c58b54873893e6a027b76c1f9c4842109b1a1208ea403801639d9b16fd80
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -36,7 +36,7 @@ entries:
     - https://github.com/grafana/helm-charts
     type: application
     urls:
-    - hhttps://fersimedyoussef.github.io/helm-charts-public/charts/grafana-8.0.2.tgz
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/grafana-8.0.2.tgz
     version: 8.0.2
   jenkins:
   - annotations:
@@ -60,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-20T14:32:55.8275084+01:00"
+    created: "2024-06-20T14:33:37.1385536+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: c3f2ecfe08659cd662ccbc9837b002cd81453f874f4118a527cd75701d023ec1
+    digest: b179d9f2b672a7048215d566c7c2e48ab69469c993a47986929784de37620f2b
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -90,6 +90,6 @@ entries:
     - https://github.com/jenkinsci/configuration-as-code-plugin
     type: application
     urls:
-    - hhttps://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.0.tgz
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.0.tgz
     version: 5.3.0
-generated: "2024-06-20T14:32:55.8199063+01:00"
+generated: "2024-06-20T14:33:37.132046+01:00"
