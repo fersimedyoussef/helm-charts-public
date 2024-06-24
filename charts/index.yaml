@@ -4,7 +4,7 @@ entries:
   - annotations:
       artifacthub.io/category: integration-delivery
       artifacthub.io/changes: |
-        - Add `controller.topologySpreadConstraints`
+        - Fix Tiltfile deprecated value reference
       artifacthub.io/images: |
         - name: jenkins
           image: docker.io/jenkins/jenkins:2.452.2-jdk17
@@ -22,11 +22,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-24T09:25:40.7341618+01:00"
+    created: "2024-06-24T11:01:45.0622979+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 9041018ba89ee921d8f7f6901ae30012faadbec6e642bdbfb29282a3216e9df4
+    digest: 06f32c2dc819241bfb965d265db4a5af1228c19bcb1322f55470d94468704187
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -52,6 +52,6 @@ entries:
     - https://github.com/jenkinsci/configuration-as-code-plugin
     type: application
     urls:
-    - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.0.tgz
-    version: 5.3.0
-generated: "2024-06-24T09:25:40.7266387+01:00"
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.1.tgz
+    version: 5.3.1
+generated: "2024-06-24T11:01:45.0556861+01:00"
