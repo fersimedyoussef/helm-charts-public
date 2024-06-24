@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-24T12:24:00.3796362+01:00"
+    created: "2024-06-24T12:31:39.0361778+01:00"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: f9b9ad1e8ecc40cd62def13d18ed014fe7cf0b4e0849b3ebac34d214f3c27b5d
+    digest: 4366aab94ef5f6c6a7821886984a289941f5f9b86ce18c7529e2537c9bbd7667
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -60,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-24T12:24:00.3836319+01:00"
+    created: "2024-06-24T12:31:39.0404084+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 82e4e776afd816944f1602f3975759a3b4d19cb95ef8c14adbb5af04d94ba4be
+    digest: 91a73c437bc3f52d5d4d45d88213525d25aa8ae879842fcd6ffd628c7d15f94f
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -100,9 +100,9 @@ entries:
           description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
     apiVersion: v2
     appVersion: 3.69.0
-    created: "2024-06-24T12:24:00.3861645+01:00"
+    created: "2024-06-24T12:31:39.0427561+01:00"
     description: Helm chart for Sonatype Nexus 3 OSS.
-    digest: 5e1451740a3f2d95181a32969147c06ef2dbbf9ce17de6a1c8614f79490dc030
+    digest: f21fa3a800b2ce1c26a0e265217784b2112e56a8ab61db39ba7b806abc606b71
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
     keywords:
@@ -134,7 +134,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.53.0
-    created: "2024-06-24T12:24:00.3931655+01:00"
+    created: "2024-06-24T12:31:39.0502249+01:00"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -153,7 +153,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.13.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 95856209e314e4681964ff1effd62eb78cad5888c9f679bf3d1170bb1e715afb
+    digest: 375466e11ed32db31dab62d697fff7fead2d986fb8cbae619dfaeb04414dbc58
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -185,9 +185,9 @@ entries:
   reflector:
   - apiVersion: v2
     appVersion: 7.1.262
-    created: "2024-06-24T12:24:00.3931655+01:00"
+    created: "2024-06-24T12:31:39.0512308+01:00"
     description: A Helm chart to deploy Reflector
-    digest: 9b3db585eb274c39935b96e73b3d8814622e78bc5e06e6d3359272ad7f9aac57
+    digest: 4f0d710335131a17d13245d8aeb54e9682ade351fda46d32e9d48b61d5bbc946
     home: https://github.com/emberstack/kubernetes-reflector
     icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
     keywords:
@@ -228,7 +228,7 @@ entries:
           url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
     apiVersion: v2
     appVersion: 10.5.1
-    created: "2024-06-24T12:24:00.403767+01:00"
+    created: "2024-06-24T12:31:39.0601011+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -244,7 +244,7 @@ entries:
       you perform continuous code inspections of your projects. The tool analyses
       30+ different programming languages and integrates into your CI pipeline and
       DevOps platform to ensure that your code meets high-quality standards.
-    digest: 00aaaf6792505495230696acf330b15ec0e744b02f42c59a78a00bad4f7dca91
+    digest: ba5cda5346864f8ffcccd2bdd17e2e2b9bde4f1cb42e9c551c578572804841aa
     home: https://www.sonarqube.org/
     icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
     keywords:
@@ -271,55 +271,4 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/sonarqube-10.5.1+2816.tgz
     version: 10.5.1+2816
-  wordpress:
-  - annotations:
-      category: CMS
-      images: |
-        - name: apache-exporter
-          image: docker.io/bitnami/apache-exporter:1.0.7-debian-12-r9
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r22
-        - name: wordpress
-          image: docker.io/bitnami/wordpress:6.5.4-debian-12-r6
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 6.5.4
-    created: "2024-06-24T12:24:00.4149972+01:00"
-    dependencies:
-    - condition: memcached.enabled
-      name: memcached
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 7.x.x
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 18.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: WordPress is the world's most popular blogging and content management
-      platform. Powerful yet simple, everyone from students to global corporations
-      use it to build beautiful, functional websites.
-    digest: ae945478782663ca8b9f683323c85afdcdf79b6c0a4fe33c385842027d2f7191
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
-    keywords:
-    - application
-    - blog
-    - cms
-    - http
-    - php
-    - web
-    - wordpress
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: wordpress
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
-    urls:
-    - https://fersimedyoussef.github.io/helm-charts-public/charts/wordpress-22.4.14.tgz
-    version: 22.4.14
-generated: "2024-06-24T12:24:00.3771103+01:00"
+generated: "2024-06-24T12:31:39.0329317+01:00"
