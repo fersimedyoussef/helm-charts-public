@@ -1,5 +1,43 @@
 apiVersion: v1
 entries:
+  grafana:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/grafana/helm-charts
+        - name: Upstream Project
+          url: https://github.com/grafana/grafana
+    apiVersion: v2
+    appVersion: 11.0.0
+    created: "2024-06-24T11:55:08.1200844+01:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: 8f310dbaf6d6ee0ca2654c79b0be1e1f87cdb5e1a3a5e28b37640a6645450024
+    home: https://grafana.com
+    icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
+    keywords:
+    - monitoring
+    - metric
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    - https://github.com/grafana/helm-charts
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/grafana-8.0.2.tgz
+    version: 8.0.2
   jenkins:
   - annotations:
       artifacthub.io/category: integration-delivery
@@ -22,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-24T10:24:34.560802142Z"
+    created: "2024-06-24T11:55:08.1236272+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 618713a47ac9f22119cbf24f88aa6f587a1a45cc00dcad241e7aaf381d94ee87
+    digest: 9cbff27ad9820dc398324ba0d94046545cec15296ab79950b2396e14f20c0920
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -54,4 +92,183 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.1.tgz
     version: 5.3.1
-generated: "2024-06-24T10:24:34.5564825Z"
+  nexus3:
+  - annotations:
+      artifacthub.io/alternativeName: nexus
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
+    apiVersion: v2
+    appVersion: 3.69.0
+    created: "2024-06-24T11:55:08.1256273+01:00"
+    description: Helm chart for Sonatype Nexus 3 OSS.
+    digest: 939aea979e079a93f34540c3e2c093571c50d432592dd5086ab53232c6176d54
+    home: https://www.sonatype.com/nexus-repository-oss
+    icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
+    keywords:
+    - artifacts
+    - dependency
+    - management
+    - sonatype
+    - nexus
+    - repository
+    maintainers:
+    - email: steve.hipwell@gmail.com
+      name: stevehipwell
+    name: nexus3
+    sources:
+    - https://github.com/sonatype/docker-nexus3
+    - https://hub.docker.com/r/sonatype/nexus3
+    - https://github.com/stevehipwell/helm-charts/
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/nexus3-4.44.0.tgz
+    version: 4.44.0
+  prometheus:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus/prometheus
+    apiVersion: v2
+    appVersion: v2.53.0
+    created: "2024-06-24T11:55:08.1346565+01:00"
+    dependencies:
+    - condition: alertmanager.enabled
+      name: alertmanager
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 1.11.*
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.20.*
+    - condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.36.*
+    - condition: prometheus-pushgateway.enabled
+      name: prometheus-pushgateway
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.13.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: d9fb33ec06b5d56a6a5135c003f72a2bed5c415685cb44a59c283547b0825a6a
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - monitoring
+    - prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/prometheus-25.22.0.tgz
+    version: 25.22.0
+  reflector:
+  - apiVersion: v2
+    appVersion: 7.1.262
+    created: "2024-06-24T11:55:08.135658+01:00"
+    description: A Helm chart to deploy Reflector
+    digest: 8a7061a2ad3cd6374c807764e9eedb85aa29f56ea30cb06eb64d60163a95504c
+    home: https://github.com/emberstack/kubernetes-reflector
+    icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
+    keywords:
+    - reflector
+    - controller
+    - copy
+    - secrets
+    - configmaps
+    - cert-manager
+    - certificates
+    maintainers:
+    - email: helm-charts@emberstack.com
+      name: winromulus
+    name: reflector
+    sources:
+    - https://github.com/emberstack/kubernetes-reflector
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/reflector-7.1.262.tgz
+    version: 7.1.262
+  sonarqube:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Update Chart's version to 10.5.1"
+        - kind: changed
+          description: "Update SonarQube's version to 10.5.1"
+        - kind: fixed
+          description: "Fix the env-var templating when sourcing from secrets"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: sonarqube
+          image: sonarqube:10.5.1-community
+      artifacthub.io/links: |
+        - name: support
+          url: https://community.sonarsource.com/
+        - name: Chart Source
+          url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
+    apiVersion: v2
+    appVersion: 10.5.1
+    created: "2024-06-24T11:55:08.14617+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 10.15.0
+    - condition: nginx.enabled,ingress-nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.9.1
+    description: SonarQube is a self-managed, automatic code review tool that systematically
+      helps you deliver clean code. As a core element of our Sonar solution, SonarQube
+      integrates into your existing workflow and detects issues in your code to help
+      you perform continuous code inspections of your projects. The tool analyses
+      30+ different programming languages and integrates into your CI pipeline and
+      DevOps platform to ensure that your code meets high-quality standards.
+    digest: 629322ea26c045eda4ce6d4ac4d39cd2de78f0bc6379fa19bce088c724a7b198
+    home: https://www.sonarqube.org/
+    icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
+    keywords:
+    - coverage
+    - security
+    - code
+    - quality
+    kubeVersion: '>= 1.24.0-0'
+    maintainers:
+    - email: leo.geoffroy+helm@sonarsource.com
+      name: leo-geoffroy-sonarsource
+    - email: carmine.vassallo@sonarsource.com
+      name: carminevassallo
+    - email: jeremy.cotineau@sonarsource.com
+      name: jCOTINEAU
+    - email: davi.koscianski-vidal@sonarsource.com
+      name: davividal
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/helm-chart-sonarqube
+    - https://github.com/SonarSource/docker-sonarqube
+    - https://github.com/SonarSource/sonarqube
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/sonarqube-10.5.1+2816.tgz
+    version: 10.5.1+2816
+generated: "2024-06-24T11:55:08.1160976+01:00"

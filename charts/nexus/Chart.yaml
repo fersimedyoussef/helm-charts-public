@@ -1,0 +1,27 @@
+annotations:
+  artifacthub.io/alternativeName: nexus
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
+apiVersion: v2
+appVersion: 3.69.0
+description: Helm chart for Sonatype Nexus 3 OSS.
+home: https://www.sonatype.com/nexus-repository-oss
+icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
+keywords:
+- artifacts
+- dependency
+- management
+- sonatype
+- nexus
+- repository
+maintainers:
+- email: steve.hipwell@gmail.com
+  name: stevehipwell
+name: nexus3
+sources:
+- https://github.com/sonatype/docker-nexus3
+- https://hub.docker.com/r/sonatype/nexus3
+- https://github.com/stevehipwell/helm-charts/
+type: application
+version: 4.44.0
