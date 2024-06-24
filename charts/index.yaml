@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-24T12:03:45.2631707+01:00"
+    created: "2024-06-24T12:24:00.3796362+01:00"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: fe73770da39c0d6f2f59bf8f18dcdd632ee16cd5ec741e40bd12cb1241e89e38
+    digest: f9b9ad1e8ecc40cd62def13d18ed014fe7cf0b4e0849b3ebac34d214f3c27b5d
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -60,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-24T12:03:45.2670948+01:00"
+    created: "2024-06-24T12:24:00.3836319+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: e10cb637b9ba3a39407fa769edc8910a0ad801588286f86c9d1868fa70eb5a02
+    digest: 82e4e776afd816944f1602f3975759a3b4d19cb95ef8c14adbb5af04d94ba4be
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -100,9 +100,9 @@ entries:
           description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
     apiVersion: v2
     appVersion: 3.69.0
-    created: "2024-06-24T12:03:45.2709144+01:00"
+    created: "2024-06-24T12:24:00.3861645+01:00"
     description: Helm chart for Sonatype Nexus 3 OSS.
-    digest: 944e524542661bed447d0f9b323c123ec0ea962fc2be42c08c36602e73b975fe
+    digest: 5e1451740a3f2d95181a32969147c06ef2dbbf9ce17de6a1c8614f79490dc030
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
     keywords:
@@ -124,12 +124,70 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/nexus3-4.44.0.tgz
     version: 4.44.0
+  prometheus:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus/prometheus
+    apiVersion: v2
+    appVersion: v2.53.0
+    created: "2024-06-24T12:24:00.3931655+01:00"
+    dependencies:
+    - condition: alertmanager.enabled
+      name: alertmanager
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 1.11.*
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.20.*
+    - condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.36.*
+    - condition: prometheus-pushgateway.enabled
+      name: prometheus-pushgateway
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.13.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: 95856209e314e4681964ff1effd62eb78cad5888c9f679bf3d1170bb1e715afb
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - monitoring
+    - prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/prometheus-25.22.0.tgz
+    version: 25.22.0
   reflector:
   - apiVersion: v2
     appVersion: 7.1.262
-    created: "2024-06-24T12:03:45.2715497+01:00"
+    created: "2024-06-24T12:24:00.3931655+01:00"
     description: A Helm chart to deploy Reflector
-    digest: d5a6808b8d225eb12d47f20ce0d1839214a7d6f664a31b47f20a2f292dc7131a
+    digest: 9b3db585eb274c39935b96e73b3d8814622e78bc5e06e6d3359272ad7f9aac57
     home: https://github.com/emberstack/kubernetes-reflector
     icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
     keywords:
@@ -150,6 +208,69 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/reflector-7.1.262.tgz
     version: 7.1.262
+  sonarqube:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Update Chart's version to 10.5.1"
+        - kind: changed
+          description: "Update SonarQube's version to 10.5.1"
+        - kind: fixed
+          description: "Fix the env-var templating when sourcing from secrets"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: sonarqube
+          image: sonarqube:10.5.1-community
+      artifacthub.io/links: |
+        - name: support
+          url: https://community.sonarsource.com/
+        - name: Chart Source
+          url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
+    apiVersion: v2
+    appVersion: 10.5.1
+    created: "2024-06-24T12:24:00.403767+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 10.15.0
+    - condition: nginx.enabled,ingress-nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.9.1
+    description: SonarQube is a self-managed, automatic code review tool that systematically
+      helps you deliver clean code. As a core element of our Sonar solution, SonarQube
+      integrates into your existing workflow and detects issues in your code to help
+      you perform continuous code inspections of your projects. The tool analyses
+      30+ different programming languages and integrates into your CI pipeline and
+      DevOps platform to ensure that your code meets high-quality standards.
+    digest: 00aaaf6792505495230696acf330b15ec0e744b02f42c59a78a00bad4f7dca91
+    home: https://www.sonarqube.org/
+    icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
+    keywords:
+    - coverage
+    - security
+    - code
+    - quality
+    kubeVersion: '>= 1.24.0-0'
+    maintainers:
+    - email: leo.geoffroy+helm@sonarsource.com
+      name: leo-geoffroy-sonarsource
+    - email: carmine.vassallo@sonarsource.com
+      name: carminevassallo
+    - email: jeremy.cotineau@sonarsource.com
+      name: jCOTINEAU
+    - email: davi.koscianski-vidal@sonarsource.com
+      name: davividal
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/helm-chart-sonarqube
+    - https://github.com/SonarSource/docker-sonarqube
+    - https://github.com/SonarSource/sonarqube
+    type: application
+    urls:
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/sonarqube-10.5.1+2816.tgz
+    version: 10.5.1+2816
   wordpress:
   - annotations:
       category: CMS
@@ -163,7 +284,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.5.4
-    created: "2024-06-24T12:03:45.2802087+01:00"
+    created: "2024-06-24T12:24:00.4149972+01:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -181,7 +302,7 @@ entries:
     description: WordPress is the world's most popular blogging and content management
       platform. Powerful yet simple, everyone from students to global corporations
       use it to build beautiful, functional websites.
-    digest: 1b9bf79201a98d31dc1bc409846d086fcf25989927f378bf9c308737d339a0e1
+    digest: ae945478782663ca8b9f683323c85afdcdf79b6c0a4fe33c385842027d2f7191
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -201,4 +322,4 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/wordpress-22.4.14.tgz
     version: 22.4.14
-generated: "2024-06-24T12:03:45.2613667+01:00"
+generated: "2024-06-24T12:24:00.3771103+01:00"
