@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-24T12:31:39.0361778+01:00"
+    created: "2024-06-24T12:32:44.0557481+01:00"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: 4366aab94ef5f6c6a7821886984a289941f5f9b86ce18c7529e2537c9bbd7667
+    digest: 106d43040021022847f519758441b60bbfe0442b4a988debefa2c94bf0cc2ff6
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -60,11 +60,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-24T12:31:39.0404084+01:00"
+    created: "2024-06-24T12:32:44.059277+01:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 91a73c437bc3f52d5d4d45d88213525d25aa8ae879842fcd6ffd628c7d15f94f
+    digest: bbf79a731d50cc367534643f956b0b26528bc7364216ee92ffb3b05e5a0f5d48
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -100,9 +100,9 @@ entries:
           description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
     apiVersion: v2
     appVersion: 3.69.0
-    created: "2024-06-24T12:31:39.0427561+01:00"
+    created: "2024-06-24T12:32:44.0607937+01:00"
     description: Helm chart for Sonatype Nexus 3 OSS.
-    digest: f21fa3a800b2ce1c26a0e265217784b2112e56a8ab61db39ba7b806abc606b71
+    digest: baba85cfddc7c29ad2974ebefaabc01abdcb9788b8a8ad548ac782912b9f7698
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
     keywords:
@@ -134,7 +134,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.53.0
-    created: "2024-06-24T12:31:39.0502249+01:00"
+    created: "2024-06-24T12:32:44.0693392+01:00"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -153,7 +153,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.13.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 375466e11ed32db31dab62d697fff7fead2d986fb8cbae619dfaeb04414dbc58
+    digest: 0e8dee59809e43951cabc441528ca77e3e69aaa5f8694038105cff174f3efb71
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -185,9 +185,9 @@ entries:
   reflector:
   - apiVersion: v2
     appVersion: 7.1.262
-    created: "2024-06-24T12:31:39.0512308+01:00"
+    created: "2024-06-24T12:32:44.0693392+01:00"
     description: A Helm chart to deploy Reflector
-    digest: 4f0d710335131a17d13245d8aeb54e9682ade351fda46d32e9d48b61d5bbc946
+    digest: c5eb079652bb68170df5e297b745cb8b25ecdc892b21edf567c52f521d1186ad
     home: https://github.com/emberstack/kubernetes-reflector
     icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
     keywords:
@@ -228,7 +228,7 @@ entries:
           url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
     apiVersion: v2
     appVersion: 10.5.1
-    created: "2024-06-24T12:31:39.0601011+01:00"
+    created: "2024-06-24T12:32:44.0784539+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -244,7 +244,7 @@ entries:
       you perform continuous code inspections of your projects. The tool analyses
       30+ different programming languages and integrates into your CI pipeline and
       DevOps platform to ensure that your code meets high-quality standards.
-    digest: ba5cda5346864f8ffcccd2bdd17e2e2b9bde4f1cb42e9c551c578572804841aa
+    digest: 70adb337117de81d0551bf6952984adc867d259e26fa3d55ad70955cc58902d9
     home: https://www.sonarqube.org/
     icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
     keywords:
@@ -271,4 +271,4 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/sonarqube-10.5.1+2816.tgz
     version: 10.5.1+2816
-generated: "2024-06-24T12:31:39.0329317+01:00"
+generated: "2024-06-24T12:32:44.053616+01:00"
