@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-06-27T17:25:14.730553347Z"
+    created: "2024-06-28T17:25:14.588439028Z"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: 18b610d84411201cf7dac91227695437db46eec8626d99391920c657812e3c7a
+    digest: c0ec4a4b83c8858e96bb67e610864b68b498370aa196e9b2d4d43bddda80d50a
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -38,8 +38,8 @@ entries:
     - https://github.com/grafana/helm-charts
     type: application
     urls:
-    - https://fersimedyoussef.github.io/helm-charts-public/charts/grafana-8.1.1.tgz
-    version: 8.1.1
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/grafana-8.2.0.tgz
+    version: 8.2.0
   ingress-nginx:
   - annotations:
       artifacthub.io/changes: |-
@@ -49,10 +49,10 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.10.1
-    created: "2024-06-27T17:25:14.736059469Z"
+    created: "2024-06-28T17:25:14.59382635Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: f941b9caa533e87f09065e70f38f5559810e39814f89e19b99560c802117425c
+    digest: 1776c11b495441b87c932debfcfd0c683c02bc13323c4ffe85809d4e233d1750
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
@@ -74,14 +74,14 @@ entries:
   - annotations:
       artifacthub.io/category: integration-delivery
       artifacthub.io/changes: |
-        - Fix Tiltfile deprecated value reference
+        - Update `jenkins/inbound-agent` to version `3256.v88a_f6e922152-1`
       artifacthub.io/images: |
         - name: jenkins
           image: docker.io/jenkins/jenkins:2.452.2-jdk17
         - name: k8s-sidecar
           image: docker.io/kiwigrid/k8s-sidecar:1.27.4
         - name: inbound-agent
-          image: jenkins/inbound-agent:3248.v65ecb_254c298-1
+          image: jenkins/inbound-agent:3256.v88a_f6e922152-1
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
         - name: Chart Source
@@ -92,11 +92,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-06-27T17:25:14.74035623Z"
+    created: "2024-06-28T17:25:14.597979351Z"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 4110fc82b67d40002c75508a0e621c3f9611cc94d7af0b177efad73e018ed966
+    digest: 175aa85a05160174f59ddea1e1d7e42281349a62559b04497fb9c05997ff5c6c
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -122,8 +122,8 @@ entries:
     - https://github.com/jenkinsci/configuration-as-code-plugin
     type: application
     urls:
-    - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.1.tgz
-    version: 5.3.1
+    - https://fersimedyoussef.github.io/helm-charts-public/charts/jenkins-5.3.3.tgz
+    version: 5.3.3
   keycloak:
   - annotations:
       category: DeveloperTools
@@ -135,7 +135,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2024-06-27T17:25:14.750445234Z"
+    created: "2024-06-28T17:25:14.608056514Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -149,7 +149,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 17e4f2ee53647b55627083013e05383ad4d1e3ca206642dffc4886da4d4ac90f
+    digest: b6748ae98295267f73c12918904fb4d3ae15e306cb30b4389c802d2d242b9378
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -172,9 +172,9 @@ entries:
           description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
     apiVersion: v2
     appVersion: 3.69.0
-    created: "2024-06-27T17:25:14.752049714Z"
+    created: "2024-06-28T17:25:14.610447715Z"
     description: Helm chart for Sonatype Nexus 3 OSS.
-    digest: 96db43d1a39dc379bfd653794b2241fc468a1a6fd9e233f1651eea6328d3a4f3
+    digest: 4648144a23ef2f322aa46bcd1ab90462fbb2176233464a825e88cc1635942911
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
     keywords:
@@ -206,7 +206,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.53.0
-    created: "2024-06-27T17:25:14.762080198Z"
+    created: "2024-06-28T17:25:14.619094518Z"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -225,7 +225,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.13.*
     description: Prometheus is a monitoring system and time series database.
-    digest: d5252985da0fd36a4b50a2201519a748e7927f5aaf8cd6aa89d2e97b291d7115
+    digest: 72ca12359f1a82e4176e863ef7bdf98ac2757f912f430ad237cca18ce5e853c0
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -257,9 +257,9 @@ entries:
   reflector:
   - apiVersion: v2
     appVersion: 7.1.262
-    created: "2024-06-27T17:25:14.762773438Z"
+    created: "2024-06-28T17:25:14.620047598Z"
     description: A Helm chart to deploy Reflector
-    digest: afcc01af825d52c54d5dbd5140988edda48efc778974592e7c80c819a16b8430
+    digest: 531f52582086f6a954e8c5d0a08e59c04f2f169e192bd03ea3dbd93291741bc4
     home: https://github.com/emberstack/kubernetes-reflector
     icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
     keywords:
@@ -306,7 +306,7 @@ entries:
           url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2024-06-27T17:25:14.773737122Z"
+    created: "2024-06-28T17:25:14.631460642Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -322,7 +322,7 @@ entries:
       you perform continuous code inspections of your projects. The tool analyses
       30+ different programming languages and integrates into your CI pipeline and
       DevOps platform to ensure that your code meets high-quality standards.
-    digest: aa0296d70f02fd005d5b4e051194e8fc51f5d4b5d0db273f052f2e628ec9ce88
+    digest: 31dcc0897cad686b6ad632c944486e772ceebde73e8bba1809b9b2913e17012b
     home: https://www.sonarqube.org/
     icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
     keywords:
@@ -352,7 +352,7 @@ entries:
   spinnaker:
   - apiVersion: v2
     appVersion: 1.30.1
-    created: "2024-06-27T17:25:14.782532525Z"
+    created: "2024-06-28T17:25:14.640598085Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -367,7 +367,7 @@ entries:
       repository: ""
       version: 1.2.3
     description: Open source Spinnaker with v1.30.1 Gitops Support
-    digest: 9d71c76b0674eb829a0dc8e1f0d3d75ba0b1ab6173c53f5a386934441c70bc47
+    digest: fd6975a736600290b495bada949bfee6b5a719b2155d5c64e7d352c3df149ab5
     home: http://spinnaker.io/
     icon: https://pbs.twimg.com/profile_images/669205226994319362/O7OjwPrh_400x400.png
     maintainers:
@@ -387,4 +387,4 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/spinnaker-2.2.17.tgz
     version: 2.2.17
-generated: "2024-06-27T17:25:14.726760346Z"
+generated: "2024-06-28T17:25:14.584629587Z"
