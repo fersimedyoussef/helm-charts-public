@@ -10,9 +10,9 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.1.0
-    created: "2024-07-04T17:25:14.241342447Z"
+    created: "2024-07-05T17:25:14.516368876Z"
     description: The leading tool for querying and visualizing time series and metrics.
-    digest: 461217cfd9544d87c0d7638c891ee0a725ee5ce59e3523b238089371418ee837
+    digest: 0368bc6b27def00f2b41a872e924d009ba6d8c23f9d2f47d796cbfc9467075f3
     home: https://grafana.com
     icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
     keywords:
@@ -49,10 +49,10 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.10.1
-    created: "2024-07-04T17:25:14.245753371Z"
+    created: "2024-07-05T17:25:14.520850598Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: d4fc9b5a9fafcad3bbff993567ecc34b819cf1d82a329df5f1e82be585855073
+    digest: 00117e402c35c72533449229e035852b2bca8c4b327497b1b131826c39443d4c
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
@@ -92,11 +92,11 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.452.2
-    created: "2024-07-04T17:25:14.250660974Z"
+    created: "2024-07-05T17:25:14.525266199Z"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project. '
-    digest: 6fa954d8e78d66eb0a60c8a0d00c9f9bf8961f0d98b64b0994cdae5528c77a87
+    digest: 40e9a85dbfce498cc1133ffd98a4ec04db8ddc513d15213bb8548161451dc057
     home: https://www.jenkins.io/
     icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
     keywords:
@@ -135,7 +135,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2024-07-04T17:25:14.261150782Z"
+    created: "2024-07-05T17:25:14.536366843Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -149,7 +149,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 7391c1f24806fded228cb487e11b6c20b931a7ffa5298f7222f485bfc161dde6
+    digest: 067ca194e69e03c81711031cbd24601f682f09c9d60868134686205843cbad60
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -172,9 +172,9 @@ entries:
           description: "Updated the _Nexus3_ OCI image to [v3.69.0](https://github.com/sonatype/nexus-public/releases/tag/release-3.69.0-02)."
     apiVersion: v2
     appVersion: 3.69.0
-    created: "2024-07-04T17:25:14.262686743Z"
+    created: "2024-07-05T17:25:14.538009963Z"
     description: Helm chart for Sonatype Nexus 3 OSS.
-    digest: 3800551eb0c08af2cb06587ba8ec5fe89e5b0bd854fc3cb2c0d9f0d7d1040d23
+    digest: 3086322ab6e99e7c38b8e6ca4495de4e5c27f707aed18ef1fa41982fc8fab463
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://raw.githubusercontent.com/stevehipwell/helm-charts/main/charts/nexus3/icon.png
     keywords:
@@ -206,7 +206,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.53.0
-    created: "2024-07-04T17:25:14.27132791Z"
+    created: "2024-07-05T17:25:14.546753366Z"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -225,7 +225,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.13.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 0d8a6e3d8b29c3cfea3feb641082849f4245a28c4ffd76ea0fe3a37376d0deac
+    digest: 2fda671bc7b8c17737dc27f366e5e3748989949262a3da6b5b6288283d33a440
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -257,9 +257,9 @@ entries:
   reflector:
   - apiVersion: v2
     appVersion: 7.1.262
-    created: "2024-07-04T17:25:14.272247031Z"
+    created: "2024-07-05T17:25:14.548146807Z"
     description: A Helm chart to deploy Reflector
-    digest: 41c56ab7506db36f4d8dfd5ae34a77c6eea87c2e2f31e96b231bcfec869251f2
+    digest: 5e2dab669ceddf37e525025026ce5439ce1444992bddd4a899caa7ae84f1ea4f
     home: https://github.com/emberstack/kubernetes-reflector
     icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
     keywords:
@@ -306,7 +306,7 @@ entries:
           url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2024-07-04T17:25:14.283778359Z"
+    created: "2024-07-05T17:25:14.55885421Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -322,7 +322,7 @@ entries:
       you perform continuous code inspections of your projects. The tool analyses
       30+ different programming languages and integrates into your CI pipeline and
       DevOps platform to ensure that your code meets high-quality standards.
-    digest: fe28eb506ddfe1ed5091ba7b3b15a0120a23e6b88511c587e2aa4e204a291bee
+    digest: 2044e593df2b30958aae75a567b421164d64dc573f38eeff9dcd9bf4455be16d
     home: https://www.sonarqube.org/
     icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
     keywords:
@@ -352,7 +352,7 @@ entries:
   spinnaker:
   - apiVersion: v2
     appVersion: 1.30.1
-    created: "2024-07-04T17:25:14.292600646Z"
+    created: "2024-07-05T17:25:14.567885253Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -367,7 +367,7 @@ entries:
       repository: ""
       version: 1.2.3
     description: Open source Spinnaker with v1.30.1 Gitops Support
-    digest: e6c900d621117961463bfb206f17939b00a305ae6a86cc2c6d03eb3967388af1
+    digest: 2d39bb5590a1417d225c4407e0d39a057cefb1655d13f24d94dc358047138906
     home: http://spinnaker.io/
     icon: https://pbs.twimg.com/profile_images/669205226994319362/O7OjwPrh_400x400.png
     maintainers:
@@ -387,4 +387,4 @@ entries:
     urls:
     - https://fersimedyoussef.github.io/helm-charts-public/charts/spinnaker-2.2.17.tgz
     version: 2.2.17
-generated: "2024-07-04T17:25:14.236263924Z"
+generated: "2024-07-05T17:25:14.511821795Z"
