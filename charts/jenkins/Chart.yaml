@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/category: integration-delivery
   artifacthub.io/changes: |
-    - Update `docker.io/kiwigrid/k8s-sidecar` to version `1.27.5`
+    - Update `configuration-as-code` to version `1836.vccda_4a_122a_a_e`
   artifacthub.io/images: |
     - name: jenkins
       image: docker.io/jenkins/jenkins:2.452.3-jdk17
@@ -46,4 +46,4 @@ sources:
 - https://github.com/maorfr/kube-tasks
 - https://github.com/jenkinsci/configuration-as-code-plugin
 type: application
-version: 5.4.2
+version: 5.4.3
